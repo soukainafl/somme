@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head> 
+    
+  <title> </title> 
+    
+    <meta charset="utf-8"/>
+     <link rel="stylesheet" href="som.css" >
+    </head>
+    <body>
+        <div class="id" >
+    donner le premier nombre  :  <input type ="text"  id="a" > <br> <br>
+          donner le deuxime nombre : <input type ="text"  id="b" >
+    <button onclick="somme()"  id="c"> calculer la somme </button>
+       <br>
+    <label id="label1">....</label>
+        
+        </div>
+        
+    <script>
+        function somme()
+        { var E;
+            var c= parseInt(document.getElementById("a").value);
+          
+            var d=parseInt(document.getElementById("b").value);
+         E=c+d;
+        /* window.alert(E); */
+            
+       document.getElementById("label1").innerHTML=(parseInt(c)+parseInt(d));
+            
+            
+           }
+        
+        
+        
+        </script>
+    
+    
+    
+  
+        </body>
+    </html>
